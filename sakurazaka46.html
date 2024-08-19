@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>櫻坂46推し判定機</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #member {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        button, input[type="text"] {
+            font-size: 18px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        li {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>あなたの櫻坂46の推しは…</h1>
+    <div id="member">ここにメンバーの名前が表示されます</div>
+    <button onclick="showRandomMember()">ランダムに表示</button>
+    
+    <h2>メンバーリスト</h2>
+    <ul id="memberList"></ul>
+    
+    <input type="text" id="newMember" placeholder="新しいメンバーの名前を入力">
+    <button onclick="addMember()">追加</button>
+
+    <!-- JavaScriptファイルを読み込む -->
+    <script src="sakurazaka-member.js"></script>
+</body>
+</html>
